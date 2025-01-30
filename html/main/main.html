@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="bg">
+    <div class="nav">
+        <a onclick="navOn()">Responses</a>
+    </div>
+    <div class="main">
+        <div class="nav-responses"></div>
+        <div class="textwritting" id="textwritting"></div>
+        <div class="animation"></div>
+        <div class="submit">
+            <textarea id="messageInput" rows="4" cols="50" placeholder="Type your message here"></textarea>
+            <button onclick="sendMessage()">
+                <span class="icon-container-inbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 12h6"></path>
+                        <path d="M12 9v6"></path>
+                        <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"></path>
+                    </svg>
+                </span>
+                <span class="text-container">SendMessage</span>
+            </button>
+            <!--
+            <form action="" method="post">
+                <textarea name="input" id="messageInput" cols="35" wrap="soft" placeholder="Input :" ></textarea>
+                <br>
+                <button onclick="sendMessage()">
+                    <span class="icon-container-inbox">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M9 12h6"></path>
+                            <path d="M12 9v6"></path>
+                            <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"></path>
+                        </svg>
+                    </span>
+                    <span class="text-container">Submit</span>
+                </button>
+            </form>
+                -->
+        </div>
+    </div>
+    <div class="footer">
+        <span> developed by fwfilab </span>
+    </div>
+</div>
+{{ end }}
